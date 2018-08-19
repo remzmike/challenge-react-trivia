@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+* { box-sizing: border-box; } /* rebass requires this */
+
+html, body, .viewport {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  background: #eee;
+}
+
+.question-appear {
+  opacity: 0.01;
+  transform: scale(0.8) translateY(50%);
+}
+.question-appear-active {
+  opacity: 1;
+  transform: scale(1) translateY(0%);
+  transition: all 180ms ease-out;
+}
+.question-appear-done {
+}
+
+.title-appear {
+  opacity: 0.01;
+  transform: scale(1.6) translateY(-100%);
+}
+.title-appear-active {
+  opacity: 1;
+  transform: scale(1) translateY(0%);
+  transition: all 120ms ease-out;
+}
+.title-appear-done {
+}
+
+/*.question-enter {
+  opacity: 0.01;
+  transform: scale(0.8) translateY(50%);
+}
+.question-enter-active {
+  opacity: 1;
+  transform: scale(1) translateY(0%);
+  transition: all 300ms ease-out;
+}
+.question-enter-done {
+  background:gray;
+}
+
+.question-exit {
+  opacity: 1;
+  transform: scale(1) translateY(0%);
+}
+.question-exit-active {
+  opacity: 0.01;
+  transform: scale(0.9) translateY(50%);
+  transition: all 300ms ease-out;
+}
+*/
+
+.modal-enter {
+  opacity: 0.0;
+}
+.modal-enter-active {
+  opacity: 0.8;
+  transition: all 2000ms ease-out;
+}
+
+.modal-appear {
+  opacity: 0;
+}
+.modal-appear-active {
+  opacity: 1;
+  transition: all 2000ms ease-out;
+}
+
+/* */
+
+.drawer-appear {
+  opacity: 0.0;
+  transform: scale(1) translateX(100%);
+}
+.drawer-appear-active {
+  opacity: 1;
+  transform: scale(1) translateX(0);
+  transition: all 60ms ease-in-out;
+}
+.drawer-appear-done {
+}
+
+.drawer-exit {
+  opacity: 1;
+  transform: scale(1) translateX(0%);
+}
+.drawer-exit-active {
+  opacity: 0.0;
+  transform: scale(1) translateX(100%);
+  transition: all 60ms ease-in-out;
+}
+.drawer-exit-done {
+}

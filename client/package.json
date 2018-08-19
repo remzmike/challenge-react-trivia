@@ -1,0 +1,52 @@
+{
+  "name": "code18-react-trivia",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@avaragado/xstateful": "^0.5.0",
+    "axios": "^0.18.0",
+    "express": "^4.16.3",
+    "history": "^4.7.2",
+    "husky": "^0.14.3",
+    "immer": "^1.5.0",
+    "lint-staged": "^7.2.0",
+    "passport": "^0.4.0",
+    "prettier": "^1.13.7",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.4",
+    "react-spinners": "^0.3.3",
+    "react-transition-group": "^2.4.0",
+    "rebass": "^2.0.0-10",
+    "redux": "^4.0.0",
+    "redux-first-router": "0.0.16-next",
+    "redux-first-router-link": "^1.4.2",
+    "redux-logger": "^3.0.6",
+    "redux-loop": "^4.3.3",
+    "reselect": "^3.0.1",
+    "styled-components": "^3.3.3",
+    "xstate": "^3.3.3"
+  },
+  "scripts": {
+    "flow": "flow",
+    "build": "react-scripts build",
+    "start": "react-scripts start",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "node_modules/.bin/eslint **/*.js"
+  },
+  "proxy": {
+    "/api": {
+      "target": "http://localhost:3001"
+    }
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.6",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^5.2.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "flow-bin": "^0.76.0"
+  }
+}
